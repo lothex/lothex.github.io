@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cep Telefonu Tamir Merkezi Müşteri Kayıt Formu</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <form action="kaydet.php" method="POST">
+</head>
+<body>
+	<main>
+		<form action="#" method="POST">
+			<label for="adsoyad">Ad Soyad:</label>
+			<input type="text" id="adsoyad" name="adsoyad" required>
+			<label for="telefon">Telefon:</label>
+			<input type="tel" name="telefon" maxlength="10" required>
+			<div class="form-group">
+    <label for="marka">Marka</label>
+    <select class="form-control" id="marka" name="marka" required>
+        <option value="">Marka seçin</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Apple">Apple</option>
+        <option value="Xiaomi">Xiaomi</option>
+        <option value="Oppo">Oppo</option>
+        <option value="Vivo">Vivo</option>
+        <option value="Alcatel">Alcatel</option>
+        <option value="Lenovo">Lenovo</option>
+        <option value="Realme">Realme</option>
+        <option value="General Mobile">General Mobile</option>
+        <option value="Sony">Sony</option>
+        <option value="ASUS">ASUS</option>
+        <option value="Nokia">Nokia</option>
+        <option value="Motorola">Motorola</option>
+        <option value="Meizu">Meizu</option>
+        <option value="Oneplus">Oneplus</option>
+        <option value="Diger">Diğer</option>
+    </select>
+</div>         
+            <label for="model">Telefon Modeli:</label>
+			<input type="text" id="model" name="model" required>
+			<div class="form-group">
+                <label for="ariza">Arıza:</label>
+                <div class="checkbox-group">
+                  <label>
+                    <input type="checkbox" name="ariza[]" value="Ekran Değişimi">
+                    <span>Ekran Değişimi</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="ariza[]" value="Batarya Değişimi">
+                    <span>Batarya Değişimi</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="ariza[]" value="Şarj Soketi Değişimi">
+                    <span>Şarj Soketi Değişimi</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="ariza[]" value="Cam Değişimi">
+                    <span>Cam Değişimi</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="ariza[]" value="Ön Kamera Değişimi">
+                    <span>Ön Kamera Değişimi</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="ariza[]" value="Arka Kamera Değişimi">
+                    <span>Arka Kamera Değişimi</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="ariza[]" value="Yazılım">
+                    <span>Yazılım</span>
+                  </label>
+                </div>
+              </div>
+        
+			<label for="ucret">Tamir Ücreti:</label>
+			<input type="number" id="ucret" name="ucret" required>
+			<input type="submit" value="Kaydet">
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="veriler.php">Kaydedilen Verileri Görüntüle</a>
+              </div>
+              
+		</form>
+        
+	</main>
+</body>
+</html>
